@@ -4,7 +4,7 @@
  * Author: Nick Burkett
  * Date: 12/30/24
  *
- * Status - WIP
+ * Status - SOLVED
  */
 public class SortedSquaresOfAnArray{
 
@@ -59,7 +59,7 @@ public class SortedSquaresOfAnArray{
                                         }
                                         else{
                                                 //Need to check if we are at the last index of the array. 
-                                                if(helper == (nums.length - 1)){
+                                                if(helper == (nums.length - 1) && (i == (nums.length-1))){
                                                         
                                                         //If so, then I need to update the last value of the array correctly.
                                                         nums[helper] = x;   //Update nums[helper] correctly. 
@@ -105,7 +105,7 @@ public class SortedSquaresOfAnArray{
          */
         public static void main(String[] args){
                 
-                int[] tmpArr = {-2, -1, 0, 1, 2};       //create an array of #s for testing. 
+                int[] tmpArr = {-2, -1, 0, 1, 2, 3, 4, 5, 6};       //create an array of #s for testing. 
                 
                 SortedSquaresOfAnArray tmpObj = new SortedSquaresOfAnArray();       //Create an instance of SortedSquaresOfAnArray for testing.
 
